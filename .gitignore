@@ -1,0 +1,30 @@
+    # Terraform State Files (highly sensitive, should not be committed)
+    terraform.tfstate
+    terraform.tfstate.backup
+    *.tfstate
+    *.tfstate.*
+
+    # Terraform Lock File (generated based on your environment)
+    .terraform.lock.hcl
+
+    # Terraform Working Directory (contains providers/modules downloaded locally)
+    .terraform/
+
+    # Crash log files
+    crash.log
+    crash.*.log
+
+    # Override files
+    *.tfvars
+    *.tfvars.json
+    override.tf
+    override.tf.json
+    *_override.tf
+    *_override.tf.json
+
+    # CLI configuration files
+    .terraformrc
+    terraform.rc
+
+    # Service Endpoint test files
+    *.pem
