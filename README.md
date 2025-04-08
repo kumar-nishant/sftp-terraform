@@ -25,3 +25,15 @@ This configuration provisions:
 4.  An SFTP user resource within Transfer Family (authentication details like SSH keys or passwords need to be managed according to the chosen identity provider setup).
 
 This setup allows authorized users to connect via standard SFTP clients and securely upload/download files, which are stored directly in the designated S3 bucket.
+
+**For multiple Environments:**
+*   **Create Environment-Specific .tfvars Files:**
+    Create a new file for each environment, for example:
+    a. terraform.dev.tfvars (for development)
+    b. terraform.staging.tfvars (for staging)
+    c. terraform.prod.tfvars (for production)
+    Each file will contain the environment-specific values for variables defined in variables.tf.
+    
+    terraform apply -var-file="terraform.dev.tfvars" -state="terraform.dev.tfstate"
+    terraform apply -var-file="terraform.staging.tfvars" -state="terraform.staging.tfstate"
+    terraform apply -var-file="terraform.prod.tfvars" -state="terraform.prod.tfstate"
