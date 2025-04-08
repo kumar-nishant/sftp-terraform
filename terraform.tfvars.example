@@ -1,0 +1,12 @@
+# Sample values - replace with your actual configuration
+region = "<AWS REGION>"
+vendor_name    = "<Vendor-name>"
+sftp_user_name = "<username-for-sftp>"
+
+# You can uncomment and set these if you want to override the defaults in variables.tf
+#s3_bucket_name_prefix = "vendor-stage-sftp-data"
+
+tags = {
+  Environment = "<environment-name>"
+  CostCenter = "<cost-allocatio-tag>"
+}
