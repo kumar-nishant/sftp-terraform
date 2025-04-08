@@ -37,6 +37,6 @@ Create a new file for each environment, for example:
 
 Each file will contain the environment-specific values for variables defined in variables.tf.
 
-terraform apply -var-file="terraform.dev.tfvars" -state="terraform.dev.tfstate"
-terraform apply -var-file="terraform.staging.tfvars" -state="terraform.staging.tfstate"
-terraform apply -var-file="terraform.prod.tfvars" -state="terraform.prod.tfstate"
+* terraform apply -var-file="terraform.dev.tfvars" -state="terraform.dev.tfstate"
+* terraform apply -var-file="terraform.staging.tfvars" -state="terraform.staging.tfstate"
+* terraform apply -var-file="terraform.prod.tfvars" -state="terraform.prod.tfstate"
